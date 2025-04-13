@@ -2,7 +2,7 @@
     "name": "oneline-formatter",
     "displayName": "One Line Formatter",
     "description": "Transform your code into a single line with this formatter",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "michilke",
     "repository": {
         "type": "git",

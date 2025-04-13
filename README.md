@@ -6,6 +6,8 @@ A VS Code extension to transform selected code into a single line.
 
 This extension adds a "Compact to One Line" command to the context menu when you select text. This command transforms the selected text into a single line by replacing line breaks with spaces.
 
+![Extension demo](images/demo.gif)
+
 ### Example
 
 Code on multiple lines:
