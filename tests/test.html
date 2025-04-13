@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test OneLiner Extension</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .example {
+            width: 80%;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test OneLiner Extension</h1>
+        <p>Sélectionnez les exemples de code ci-dessous et utilisez l'extension OneLiner pour les transformer en une seule ligne.</p>
+        
+        <div class="example">
+            <h2>HTML Simple</h2>
+            <div class="code">
+<div 
+    class="header" 
+    id="main-header"
+    role="banner"
+>
+    Contenu de l'en-tête
+</div>
+            </div>
+        </div>
+
+        <div class="example"> <h2>Composants React/JSX</h2> <div class="code"> </div> </div>
+
+        <div class="example">
+            <h2>JavaScript (Fonction)</h2>
+            <div class="code">
+function calculateTotal(
+    items, 
+    taxRate = 0.1, 
+    discount = 0
+) {
+    return items.reduce((total, item) => 
+        total + item.price, 0) * (1 + taxRate) - discount;
+}
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>JavaScript (Objet)</h2>
+            <div class="code">
+const user = {
+    id: 1,
+    name: 'Jean Dupont',
+    email: 'jean.dupont@exemple.com',
+    preferences: {
+        theme: 'dark',
+        notifications: true
+    }
+};
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>CSS</h2>
+            <div class="code">
+.button { background-color: #4285f4; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Liste HTML</h2>
+            <div class="code">
+<ul class="navigation" aria-label="Menu principal" >
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/produits">Produits</a></li>
+    <li><a href="/contact">Contact</a></li>
+</ul>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Tableau HTML</h2>
+            <div class="code">
+<table class="data-table" aria-label="Tableau des utilisateurs" role="table" >
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+            <th>Ville</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr> <td>Marie</td> <td>28</td> <td>Paris</td> </tr>
+    </tbody>
+</table>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Balises imbriquées complexes</h2>
+            <div class="code">
+<div 
+    class="card"
+>
+    <div 
+        class="card-header"
+    >
+        <h3 
+            class="title"
+        >Titre de la carte</h3>
+    </div>
+    <div 
+        class="card-body"
+    >
+        <p>Contenu de la carte</p>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>URL longue</h2>
+            <div class="code">
+https://www.example.com/
+    search?
+    query=test+oneliner&
+    category=development&
+    sort=relevance&
+    page=1
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Requête SQL</h2>
+            <div class="code">
+SELECT 
+    u.id, 
+    u.name, 
+    u.email, 
+    p.address 
+FROM 
+    users u 
+JOIN 
+    profiles p 
+ON 
+    u.id = p.user_id 
+WHERE 
+    u.active = true 
+ORDER BY 
+    u.name ASC
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Ce script est juste pour la démonstration
+        console.log('Test de l\'extension OneLiner');
+    </script>
+</body>
+</html>

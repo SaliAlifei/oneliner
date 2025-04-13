@@ -1,0 +1,72 @@
+{
+    "name": "oneliner",
+    "displayName": "OneLiner",
+    "description": "Transforme rapidement du code multi-lignes en une seule ligne. Parfait pour compacter du HTML, CSS, JSX, JSON ou autre code.",
+    "version": "0.0.1",
+    "publisher": "michilke",
+    "engines": {
+        "vscode": "^1.99.0"
+    },
+    "categories": [
+        "Formatters",
+        "Other"
+    ],
+    "keywords": [
+        "format",
+        "oneline",
+        "oneliner",
+        "minify",
+        "compact",
+        "formatting",
+        "html",
+        "jsx",
+        "css"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "oneliner.toOneLine",
+                "title": "OneLine"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "oneliner.toOneLine",
+                "key": "alt+shift+o",
+                "mac": "alt+shift+o",
+                "when": "editorHasSelection"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "editorHasSelection",
+                    "command": "oneliner.toOneLine",
+                    "group": "1_modification"
+                }
+            ]
+        }
+    },
+    
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.99.0",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "@typescript-eslint/eslint-plugin": "^8.28.0",
+        "@typescript-eslint/parser": "^8.28.0",
+        "eslint": "^9.23.0",
+        "typescript": "^5.8.2",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1"
+    }
+}
