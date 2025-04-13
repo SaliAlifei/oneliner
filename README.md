@@ -1,14 +1,14 @@
-# OneLiner
+# One Line Formatter
 
-Une extension VS Code pour transformer du code sélectionné en une seule ligne.
+A VS Code extension to transform selected code into a single line.
 
-## Fonctionnalités
+## Features
 
-Cette extension ajoute une commande "OneLine" au menu contextuel lorsque vous sélectionnez du texte. Cette commande transforme le texte sélectionné en une seule ligne en remplaçant les retours à la ligne par des espaces.
+This extension adds a "Compact to One Line" command to the context menu when you select text. This command transforms the selected text into a single line by replacing line breaks with spaces.
 
-### Exemple
+### Example
 
-Code sur plusieurs lignes:
+Code on multiple lines:
 ```
 <Button 
     label="Send"
@@ -18,28 +18,28 @@ Code sur plusieurs lignes:
 />
 ```
 
-Devient:
+Becomes:
 ```
 <Button label="Send" isLoading={isSaving} onClick={handleSubmit} disabled={isSaving} />
 ```
 
-## Utilisation
+## Usage
 
-1. Sélectionnez du texte dans l'éditeur
-2. Faites un clic droit sur la sélection
-3. Choisissez "OneLine" dans le menu contextuel
+1. Select text in the editor
+2. Right-click on the selection
+3. Choose "Compact to One Line" from the context menu
 
-## Raccourcis clavier
+## Keyboard shortcuts
 
-L'extension est configurée avec le raccourci clavier par défaut suivant :
-- Windows/Linux : `Alt+Shift+O`
-- Mac : `Option+Shift+O`
+The extension is configured with the following default keyboard shortcut:
+- Windows/Linux: `Alt+Shift+O`
+- Mac: `Option+Shift+O`
 
-Pour personnaliser ce raccourci :
-1. Ouvrez la palette de commandes avec `Ctrl+Shift+P` (Windows/Linux) ou `Cmd+Shift+P` (Mac)
-2. Tapez "Préférences: Raccourcis clavier" et sélectionnez-le
-3. Dans la barre de recherche, tapez "OneLine"
-4. Cliquez sur l'icône de crayon à côté de la commande "OneLine" et entrez votre nouveau raccourci
-5. Appuyez sur Entrée pour confirmer
+To customize this shortcut:
+1. Open the command palette with `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
+2. Type "Preferences: Keyboard Shortcuts" and select it
+3. In the search bar, type "Compact to One Line"
+4. Click on the pencil icon next to the "Compact to One Line" command and enter your new shortcut
+5. Press Enter to confirm
 
-Le raccourci ne fonctionnera que lorsqu'une sélection de texte est active dans l'éditeur.
+The shortcut will only work when a text selection is active in the editor.

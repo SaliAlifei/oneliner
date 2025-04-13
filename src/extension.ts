@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Extension "oneliner" is now active!');
+    console.log('Extension "One Line Formatter" is now active!');
 
     // Commande pour transformer le code en une ligne
-    const disposableOneLine = vscode.commands.registerCommand('oneliner.toOneLine', () => {
+    const disposableOneLine = vscode.commands.registerCommand('oneline-formatter.toOneLine', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             return;
@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         const selection = editor.selection;
         if (selection.isEmpty) {
-            vscode.window.showInformationMessage('Veuillez sélectionner du texte pour utiliser OneLine');
+            vscode.window.showInformationMessage('Please select some text to compact into one line.');
             return;
         }
 

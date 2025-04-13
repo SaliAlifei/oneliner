@@ -1,7 +1,7 @@
 {
-    "name": "oneliner",
-    "displayName": "OneLiner",
-    "description": "Transforme rapidement du code multi-lignes en une seule ligne. Parfait pour compacter du HTML, CSS, JSX, JSON ou autre code.",
+    "name": "oneline-formatter",
+    "displayName": "One Line Formatter",
+    "description": "Transform your code into a single line with this formatter",
     "version": "0.0.1",
     "publisher": "michilke",
     "repository": {
@@ -32,13 +32,13 @@
     "contributes": {
         "commands": [
             {
-                "command": "oneliner.toOneLine",
-                "title": "OneLine"
+                "command": "oneline-formatter.toOneLine",
+                "title": "Compact to One Line"
             }
         ],
         "keybindings": [
             {
-                "command": "oneliner.toOneLine",
+                "command": "oneline-formatter.toOneLine",
                 "key": "alt+shift+o",
                 "mac": "alt+shift+o",
                 "when": "editorHasSelection"
@@ -48,7 +48,7 @@
             "editor/context": [
                 {
                     "when": "editorHasSelection",
-                    "command": "oneliner.toOneLine",
+                    "command": "oneline-formatter.toOneLine",
                     "group": "1_modification"
                 }
             ]
