@@ -4,6 +4,11 @@
     "description": "Transforme rapidement du code multi-lignes en une seule ligne. Parfait pour compacter du HTML, CSS, JSX, JSON ou autre code.",
     "version": "0.0.1",
     "publisher": "michilke",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SaliAlifei/oneliner"
+    },
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.99.0"
     },
